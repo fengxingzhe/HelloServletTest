@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns="http://java.sun.com/xml/ns/javaee"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+         id="WebApp_ID" version="3.0">
+    
+    <servlet>
+        <servlet-name>helloServlet</servlet-name>
+        <servlet-class>com.qiqi.HelloServlet.HelloServlet</servlet-class>
+        <init-param>
+            <param-name>encoding</param-name>
+            <param-value>UTF-8</param-value>
+        </init-param>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>helloServlet</servlet-name>
+        <url-pattern>/hello</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>httpServletDemo</servlet-name>
+        <servlet-class>com.qiqi.http_servlet_demo.Servlet1</servlet-class>
+        <init-param>
+            <param-name>encoding</param-name>
+            <param-value>UTF-8</param-value>
+        </init-param>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>httpServletDemo</servlet-name>
+        <url-pattern>/demoServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>httpServletDemo1</servlet-name>
+        <servlet-class>com.qiqi.http_servlet_demo1.HttpServletDemo</servlet-class>
+        <init-param>
+            <param-name>encoding</param-name>
+            <param-value>UTF-8</param-value>
+        </init-param>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>httpServletDemo1</servlet-name>
+        <url-pattern>/httpServletDemo</url-pattern>
+    </servlet-mapping>
+
+</web-app>
