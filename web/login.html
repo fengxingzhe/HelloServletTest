@@ -1,0 +1,27 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>表单标签</title>
+<style type="text/css">
+	td{text-align: center}
+</style>
+</head>
+<body>
+	<h1>用户注册</h1>
+	<!--
+	            表单作用: 用于向服务器传输数据。
+		action: 要将表单中的数据提交到哪个服务器 一般来说是URL
+		method: 表单数据的提交方式:  
+			post: 将表单中的参数在请求体中
+			get: 将表单中的参数直接拼接到url中  /index.html?username=root&password=admin
+		enctype:表示表数据提交编码方式
+	 -->
+	<form action="/session/login" method="POST" enctype="application/x-www-form-urlencoded">
+		账号:<input type="text" name="username" ><br>
+
+		密码:<input type="password" name="password"><br>
+		<input type="submit" value="登录">
+	</form>
+</body>
+</html>
